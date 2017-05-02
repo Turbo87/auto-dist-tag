@@ -17,6 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "fs-extra": "^3.0.0",
     "package-json": "^4.0.1",
     "pkg-up": "^1.0.0"
   },
