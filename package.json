@@ -17,6 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "package-json": "^4.0.1"
+    "package-json": "^4.0.1",
+    "pkg-up": "^1.0.0"
   }
 }
