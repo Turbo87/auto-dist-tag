@@ -33,6 +33,9 @@ $ auto-dist-tag --help
 on the `version` property in your `package.json` file and the previously
 published versions unless you explicitly specify a tag yourself.
 
+Have a look at our [tests](test/calc-dist-tag-test.js) to figure out what
+tags to expect as output.
+
 
 ### Travis CI
 
