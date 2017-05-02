@@ -14,7 +14,7 @@ Add the following snippet to your `.travis.yml` file:
 ```yaml
 before_deploy:
   - npm install -g auto-dist-tag
-  - auto-dist-tag
+  - auto-dist-tag --write
 ```
 
 
