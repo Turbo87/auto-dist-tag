@@ -1,7 +1,8 @@
 auto-dist-tag
 ===============================================================================
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Turbo87/auto-dist-tag.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/Turbo87/auto-dist-tag.svg?branch=master)](https://travis-ci.org/Turbo87/auto-dist-tag)
+[![npm](https://img.shields.io/npm/v/auto-dist-tag.svg)](https://www.npmjs.com/package/auto-dist-tag)
 
 Automatically rewrites the `publishConfig.tag` setting in your
 `package.json` file for you
