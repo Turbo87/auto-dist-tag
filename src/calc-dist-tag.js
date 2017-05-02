@@ -21,6 +21,10 @@ module.exports = function calcDistTag(version, distTags) {
   }
 
   let identifier = prerelease[0];
+  if (isNumeric(identifier)) {
+    identifier = 'prerelease';
+  }
+
   let identifierLatest = distTags[identifier];
   if (!identifierLatest) {
     return identifier;
@@ -28,3 +32,7 @@ module.exports = function calcDistTag(version, distTags) {
 
   return semver.gte(version, identifierLatest) ? identifier : 'old';
 };
+
+function isNumeric(num) {
+  return !isNaN(num);
+}

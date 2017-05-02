@@ -23,6 +23,7 @@ describe('calcDistTag()', function() {
   test('1.0.0-beta.0', {}, 'latest');
   test('1.2.3-beta.0', {}, 'latest');
   test('1.0.0-rc.0', {}, 'latest');
+  test('1.0.0-0', {}, 'latest');
 
   // stable release and stable "latest"
   test('1.2.3', { latest: '0.0.0' }, 'latest');
@@ -40,6 +41,7 @@ describe('calcDistTag()', function() {
   test('1.2.3', { latest: '1.2.4-alpha.0' }, 'latest');
   test('1.2.3', { latest: '1.2.3-beta.0' }, 'latest');
   test('1.2.3', { latest: '1.2.3-rc.0' }, 'latest');
+  test('1.2.3', { latest: '1.2.3-0' }, 'latest');
 
   // prerelease and stable "latest"
   test('0.0.0-alpha.0', { latest: '1.0.0' }, 'alpha');
@@ -49,6 +51,7 @@ describe('calcDistTag()', function() {
   test('1.0.0-beta.0', { latest: '1.0.0' }, 'beta');
   test('1.2.3-beta.0', { latest: '1.0.0' }, 'beta');
   test('1.0.0-rc.0', { latest: '1.0.0' }, 'rc');
+  test('1.0.0-0', { latest: '1.0.0' }, 'prerelease');
 
   // prerelease, stable "latest" and prerelease identifier
   test('1.0.0-alpha.1', { latest: '0.0.0', alpha: '1.0.0-alpha.0' }, 'alpha');
@@ -58,6 +61,9 @@ describe('calcDistTag()', function() {
   test('1.0.0-beta.1', { latest: '0.0.0', beta: '1.0.0-beta.1' }, 'beta');
   test('1.0.0-beta.1', { latest: '0.0.0', beta: '1.0.0-beta.2' }, 'old');
   test('1.0.0-beta.1', { latest: '0.0.0', alpha: '1.0.0-alpha.2' }, 'beta');
+  test('1.0.0-1', { latest: '0.0.0', prerelease: '1.0.0-0' }, 'prerelease');
+  test('1.0.0-1', { latest: '0.0.0', prerelease: '1.0.0-1' }, 'prerelease');
+  test('1.0.0-1', { latest: '0.0.0', prerelease: '1.0.0-2' }, 'old');
 
   // prerelease and prerelease "latest"
   test('1.0.0-alpha.0', { latest: '1.0.0-beta.1' }, 'alpha');
@@ -66,6 +72,8 @@ describe('calcDistTag()', function() {
   test('1.0.0-beta.1', { latest: '1.0.0-beta.1' }, 'latest');
   test('1.0.0-beta.2', { latest: '1.0.0-beta.1' }, 'latest');
   test('1.0.0-rc.0', { latest: '1.0.0-beta.1' }, 'latest');
+  test('1.0.0-0', { latest: '1.0.0-alpha.0' }, 'prerelease');
+  test('1.0.0-alpha.0', { latest: '1.0.0-0' }, 'latest');
 
   // prerelease, prerelease "latest" and prerelease identifier
   test('1.0.0-alpha.0', { latest: '1.0.0-beta.1', alpha: '1.0.0-alpha.1' }, 'old');
