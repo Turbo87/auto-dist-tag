@@ -9,6 +9,9 @@
   "license": "Apache-2.0",
   "author": "Tobias Bieniek <tobias.bieniek@gmail.com>",
   "main": "src/auto-dist-tag.js",
+  "bin": {
+    "auto-dist-tag": "cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Turbo87/auto-dist-tag.git"
