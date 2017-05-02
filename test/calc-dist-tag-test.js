@@ -81,4 +81,15 @@ describe('calcDistTag()', function() {
   test('1.0.0-alpha.0', { latest: '1.0.0-beta.1', alpha: '1.0.0-alpha.1' }, 'old');
   test('1.0.0-alpha.4', { latest: '1.0.0-beta.1', alpha: '1.0.0-alpha.1' }, 'alpha');
 
+  // real world: ember-cli
+  test('2.12.3', { latest: '2.12.2', beta: '2.13.0-beta.4' }, 'latest');
+  test('2.13.0', { latest: '2.12.3', beta: '2.13.0-beta.4' }, 'latest');
+  test('2.14.0-beta.1', { latest: '2.13.0', beta: '2.13.0-beta.4' }, 'beta');
+
+  // real world: ember-cli-eslint
+  test('3.0.3', { latest: '3.0.2' }, 'latest');
+  test('3.1.0-beta.1', { latest: '3.0.3' }, 'beta');
+  test('3.1.0-beta.2', { latest: '3.0.3', beta: '3.1.0-beta.1' }, 'beta');
+  test('3.1.0', { latest: '3.0.3', beta: '3.1.0-beta.2' }, 'latest');
+
 });
