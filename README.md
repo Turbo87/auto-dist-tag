@@ -4,7 +4,7 @@ auto-dist-tag
 [![Greenkeeper badge](https://badges.greenkeeper.io/Turbo87/auto-dist-tag.svg)](https://greenkeeper.io/)
 
 Automatically rewrites the `publishConfig.tag` setting in your
-`package.json` for you
+`package.json` file for you
 
 
 ## Installation
