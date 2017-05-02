@@ -1,0 +1,19 @@
+{
+  "name": "auto-dist-tag",
+  "version": "1.0.0",
+  "description": "Automatically rewrites the publishConfig.tag setting in your package.json for you",
+  "homepage": "https://github.com/Turbo87/auto-dist-tag#readme",
+  "bugs": {
+    "url": "https://github.com/Turbo87/auto-dist-tag/issues"
+  },
+  "license": "Apache-2.0",
+  "author": "Tobias Bieniek <tobias.bieniek@gmail.com>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Turbo87/auto-dist-tag.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
