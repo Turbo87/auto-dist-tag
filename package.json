@@ -15,5 +15,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "package-json": "^4.0.1"
   }
 }
