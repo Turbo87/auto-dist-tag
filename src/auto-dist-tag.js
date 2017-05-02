@@ -1,3 +1,5 @@
+'use strict';
+
 const fs = require('fs-extra');
 const pkgUp = require('pkg-up');
 const getDistTags = require('./fetch-dist-tags');
