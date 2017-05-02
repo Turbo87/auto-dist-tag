@@ -1,3 +1,5 @@
+'use strict';
+
 const semver = require('semver');
 
 module.exports = function calcDistTag(version, distTags) {

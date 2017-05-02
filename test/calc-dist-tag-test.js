@@ -1,3 +1,5 @@
+'use strict';
+
 const expect = require('chai').expect;
 const calcDistTag = require('../src/calc-dist-tag');
 
