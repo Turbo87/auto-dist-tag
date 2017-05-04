@@ -23,7 +23,7 @@
     "fs-extra": "^3.0.0",
     "meow": "^3.7.0",
     "package-json": "^4.0.1",
-    "pkg-up": "^1.0.0",
+    "pkg-up": "^2.0.0",
     "semver": "^5.3.0"
   },
   "devDependencies": {
