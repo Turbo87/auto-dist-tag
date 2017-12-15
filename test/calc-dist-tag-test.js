@@ -92,4 +92,11 @@ describe('calcDistTag()', function() {
   test('3.1.0-beta.2', { latest: '3.0.3', beta: '3.1.0-beta.1' }, 'beta');
   test('3.1.0', { latest: '3.0.3', beta: '3.1.0-beta.2' }, 'latest');
 
+  // real world: ember-cli-mocha
+  test('0.12.0', { latest: '0.11.1' }, 'latest');
+  test('0.13.0-beta.1', { latest: '0.12.0' }, 'beta');
+
+  // real world: ember-mocha
+  test('0.14.4', { latest: '0.14.3' }, 'latest');
+  test('0.14.5-beta.1', { latest: '0.14.4' }, 'beta');
 });
