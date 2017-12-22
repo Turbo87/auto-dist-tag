@@ -1,12 +1,11 @@
 'use strict';
 
-const expect = require('chai').expect;
 const calcDistTag = require('../src/calc-dist-tag');
 
 describe('calcDistTag()', function() {
   function test(version, distTags, expected) {
     it(`${version}, ${JSON.stringify(distTags)} -> ${expected}`, function() {
-      return expect(calcDistTag(version, distTags)).to.equal(expected);
+      expect(calcDistTag(version, distTags)).toEqual(expected);
     });
   }
 
