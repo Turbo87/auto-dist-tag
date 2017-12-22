@@ -12,7 +12,7 @@ install:
   - yarn install
 
 script:
-  - yarn test
+  - yarn test --coverage
 
 before_deploy:
   - npm install -g auto-dist-tag
