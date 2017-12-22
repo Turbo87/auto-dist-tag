@@ -17,7 +17,7 @@
     "url": "git+https://github.com/Turbo87/auto-dist-tag.git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "jest"
   },
   "dependencies": {
     "fs-extra": "^5.0.0",
@@ -27,10 +27,14 @@
     "semver": "^5.3.0"
   },
   "devDependencies": {
-    "chai": "^4.0.0",
-    "mocha": "^4.0.0"
+    "jest": "^21.2.1"
   },
   "engines": {
     "node": ">=4"
+  },
+  "jest": {
+    "testMatch": [
+      "**/test/**/*-test.js"
+    ]
   }
 }
