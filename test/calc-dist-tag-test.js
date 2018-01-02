@@ -98,4 +98,10 @@ describe('calcDistTag()', function() {
   // real world: ember-mocha
   test('0.14.4', { latest: '0.14.3' }, 'latest');
   test('0.14.5-beta.1', { latest: '0.14.4' }, 'beta');
+
+  // real world: ember-source
+  test('3.0.0-beta+metadata-here', { latest: '2.18.0' }, 'beta');
+  test('3.1.0-canary+metadata-here', { latest: '2.18.0' }, 'canary');
+  test('2.18.0-release+build-metadata-here', { latest: '2.18.0' }, 'release');
+  test('2.18.1+build-metadata-here', { latest: '2.18.0' }, 'latest');
 });
