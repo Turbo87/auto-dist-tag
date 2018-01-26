@@ -11,7 +11,14 @@ const cli = meow(`
 
 	Options
 	  --write, -w  Write calculated dist-tag to the package.json file
-`);
+`, {
+  flags: {
+    write: {
+      type: boolean,
+      alias: 'w'
+    }
+  }
+});
 
 let cwd = cli.input[0] || process.cwd();
 
