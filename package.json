@@ -1,6 +1,6 @@
 {
   "name": "auto-dist-tag",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Automatically rewrites the publishConfig.tag setting in your package.json file for you",
   "homepage": "https://github.com/Turbo87/auto-dist-tag#readme",
   "bugs": {
