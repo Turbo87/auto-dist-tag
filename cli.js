@@ -14,7 +14,7 @@ const cli = meow(`
 `, {
   flags: {
     write: {
-      type: boolean,
+      type: 'boolean',
       alias: 'w'
     }
   }
