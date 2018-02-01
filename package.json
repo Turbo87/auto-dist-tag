@@ -22,7 +22,7 @@
   "dependencies": {
     "debug": "^3.1.0",
     "fs-extra": "^5.0.0",
-    "meow": "^3.7.0",
+    "meow": "^4.0.0",
     "package-json": "^4.0.1",
     "pkg-up": "^2.0.0",
     "semver": "^5.3.0"
