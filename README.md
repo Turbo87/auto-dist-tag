@@ -48,6 +48,10 @@ snippet to your `.travis.yml` file:
 before_deploy:
   - npm install -g auto-dist-tag
   - auto-dist-tag --write
+
+deploy:
+  skip_cleanup: true
+  ...
 ```
 
 
