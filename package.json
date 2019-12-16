@@ -25,7 +25,7 @@
     "meow": "^5.0.0",
     "package-json": "^5.0.0",
     "pkg-up": "^2.0.0",
-    "semver": "^6.3.0"
+    "semver": "^7.0.0"
   },
   "devDependencies": {
     "jest": "^24.8.0"
