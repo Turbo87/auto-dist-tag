@@ -28,7 +28,7 @@
     "semver": "^7.0.0"
   },
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^26.6.1"
   },
   "engines": {
     "node": ">=6"
