@@ -23,7 +23,7 @@
     "debug": "^4.3.1",
     "fs-extra": "^8.1.0",
     "meow": "^5.0.0",
-    "package-json": "^5.0.0",
+    "package-json": "^6.5.0",
     "pkg-up": "^2.0.0",
     "semver": "^7.0.0"
   },
