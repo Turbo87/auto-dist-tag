@@ -17,6 +17,7 @@
     "url": "git+https://github.com/Turbo87/auto-dist-tag.git"
   },
   "scripts": {
+    "release": "release-it",
     "test": "jest"
   },
   "dependencies": {
@@ -28,7 +29,9 @@
     "semver": "^7.0.0"
   },
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "release-it": "^14.1.0",
+    "release-it-lerna-changelog": "^2.4.0"
   },
   "engines": {
     "node": ">=10"
