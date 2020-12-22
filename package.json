@@ -31,7 +31,7 @@
     "jest": "^22.4.3"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=10"
   },
   "jest": {
     "testMatch": [
