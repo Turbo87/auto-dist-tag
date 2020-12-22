@@ -11,21 +11,16 @@ module.exports = async function autoDistTag(cwd, options) {
   let tags = await getDistTags(pkg.name);
   let tag = await calcDistTag(pkg.version, tags);
 
-  if (options && options.write) {
+  if (
+    options && options.write &&
     // skip writing to `package.json if an explicit publishConfig.tag is set
-    if ('publishConfig' in pkg && 'tag' in pkg.publishConfig) {
-      return;
-    }
-
+    !('publishConfig' in pkg && 'tag' in pkg.publishConfig) &&
     // skip writing to `package.json if the calculated tag is "latest" because it's the default anyway
-    if (tag === 'latest') {
-      return;
-    }
-
+    tag !== 'latest'
+  ) {
     pkg.publishConfig = pkg.publishConfig || {};
     pkg.publishConfig.tag = tag;
-
-    fs.writeJson(pkgPath, pkg, { spaces: 2 });
+    fs.writeJson(pkgPath, pkg, {spaces: 2});
   }
 
   return tag;
