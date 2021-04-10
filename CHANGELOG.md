@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.1.0 (2021-04-10)
+
+#### :house: Internal
+* [#164](https://github.com/Turbo87/auto-dist-tag/pull/164) Migrate from yarn to pnpm ([@Turbo87](https://github.com/Turbo87))
+* [#141](https://github.com/Turbo87/auto-dist-tag/pull/141) Update dependency meow to v9
+
+#### Committers: 1
+- Tobias Bieniek ([@Turbo87](https://github.com/Turbo87))
+
 ## v2.0.0 (2020-12-22)
 
 #### :boom: Breaking Change
