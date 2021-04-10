@@ -1,3 +1,10 @@
+.editorconfig
+.github/
+.release-it.js
+pnpm-lock.yaml
+RELEASE.md
+renovate.json
+
 # Logs
 logs
 *.log
