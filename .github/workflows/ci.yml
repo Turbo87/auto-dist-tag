@@ -23,13 +23,16 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: volta-cli/action@v1
+      - uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          yarn-version: 1.22.5
 
-      - run: yarn install
-      - run: yarn test --coverage
+      - uses: pnpm/action-setup@v2.0.0
+        with:
+          version: 5.18.9
+
+      - run: pnpm install
+      - run: pnpm test -- --coverage
 
   release:
     name: Release
@@ -46,11 +49,15 @@ jobs:
           node-version: 10
           registry-url: 'https://registry.npmjs.org'
 
-      - run: yarn install --frozen-lockfile
+      - uses: pnpm/action-setup@v2.0.0
+        with:
+          version: 5.18.9
+
+      - run: pnpm install --frozen-lockfile
 
       - name: auto-dist-tag
-        run: npx auto-dist-tag@1 --write
+        run: pnpx auto-dist-tag@1 --write
 
-      - run: npm publish
+      - run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
