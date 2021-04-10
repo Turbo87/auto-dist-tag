@@ -58,6 +58,6 @@ jobs:
       - name: auto-dist-tag
         run: pnpx auto-dist-tag@1 --write
 
-      - run: pnpm publish
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
