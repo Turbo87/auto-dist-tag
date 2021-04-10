@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.1.1 (2021-04-10)
+
+#### :house: Internal
+* [#165](https://github.com/Turbo87/auto-dist-tag/pull/165) CI: Use `npm` for publishing ([@Turbo87](https://github.com/Turbo87))
+* [#166](https://github.com/Turbo87/auto-dist-tag/pull/166) Adjust ignore files ([@Turbo87](https://github.com/Turbo87))
+
+#### Committers: 1
+- Tobias Bieniek ([@Turbo87](https://github.com/Turbo87))
+
 ## v2.1.0 (2021-04-10)
 
 #### :house: Internal
