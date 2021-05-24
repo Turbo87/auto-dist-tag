@@ -7,7 +7,7 @@ specifiers:
   meow: ^9.0.0
   package-json: ^6.0.0
   pkg-up: ^3.0.0
-  release-it: 14.6.2
+  release-it: 14.7.0
   release-it-lerna-changelog: 3.1.0
   semver: ^7.0.0
 
@@ -21,8 +21,8 @@ dependencies:
 
 devDependencies:
   jest: 26.6.3
-  release-it: 14.6.2
-  release-it-lerna-changelog: 3.1.0_release-it@14.6.2
+  release-it: 14.7.0
+  release-it-lerna-changelog: 3.1.0_release-it@14.7.0
 
 packages:
 
@@ -2515,8 +2515,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /inquirer/8.0.0:
-    resolution: {integrity: sha512-ON8pEJPPCdyjxj+cxsYRe6XfCJepTxANdNnTebsTuQgXpRyZRRT9t4dJwjRubgmvn20CLSEnozRUayXyM9VTXA==}
+  /inquirer/8.1.0:
+    resolution: {integrity: sha512-1nKYPoalt1vMBfCMtpomsUc32wmOoWXAoq3kM/5iTfxyQ2f/BxjixQpC+mbZ7BI0JUXHED4/XPXekDVtJNpXYw==}
     engines: {node: '>=8.0.0'}
     dependencies:
       ansi-escapes: 4.3.2
@@ -2527,6 +2527,7 @@ packages:
       figures: 3.2.0
       lodash: 4.17.21
       mute-stream: 0.0.8
+      ora: 5.4.0
       run-async: 2.4.1
       rxjs: 6.6.7
       string-width: 4.2.2
@@ -4396,7 +4397,7 @@ packages:
     dependencies:
       rc: 1.2.8
 
-  /release-it-lerna-changelog/3.1.0_release-it@14.6.2:
+  /release-it-lerna-changelog/3.1.0_release-it@14.7.0:
     resolution: {integrity: sha512-VehiRVpIB37XfggFcwMwDZ3ncXmD4npgM2tGGTfa3CN8MFCCJPPIRvaqHySDC/YV8mN7oLZeGSI/exrKXeybmA==}
     engines: {node: 10.* || 12.* || >= 14}
     peerDependencies:
@@ -4405,7 +4406,7 @@ packages:
       execa: 4.1.0
       lerna-changelog: 1.0.1
       mdast-util-from-markdown: 0.8.5
-      release-it: 14.6.2
+      release-it: 14.7.0
       tmp: 0.2.1
       validate-peer-dependencies: 1.2.0
       which: 2.0.2
@@ -4413,8 +4414,8 @@ packages:
       - supports-color
     dev: true
 
-  /release-it/14.6.2:
-    resolution: {integrity: sha512-rjRe2cC59ueTUGS2rkwI5JEeN0DQlU2eeq4nrCQcwQXv5IzC+9uPd7EvoUT7VDwJ4ZNu1Oh8DZVQqrtDzVboUg==}
+  /release-it/14.7.0:
+    resolution: {integrity: sha512-g8z6BR7qsO1r0HtS4rquRU5PmwHrIZ5jYTuaaa1ZSLrh91Nm23PBpHR/0jsA549Qzujj4W/mkeskoAAIvHugWQ==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -4432,7 +4433,7 @@ packages:
       globby: 11.0.3
       got: 11.8.2
       import-cwd: 3.0.0
-      inquirer: 8.0.0
+      inquirer: 8.1.0
       is-ci: 3.0.0
       lodash: 4.17.21
       mime-types: 2.1.30
