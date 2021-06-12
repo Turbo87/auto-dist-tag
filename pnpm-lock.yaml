@@ -7,7 +7,7 @@ specifiers:
   meow: ^9.0.0
   package-json: ^6.0.0
   pkg-up: ^3.0.0
-  release-it: 14.8.0
+  release-it: 14.9.0
   release-it-lerna-changelog: 3.1.0
   semver: ^7.0.0
 
@@ -21,8 +21,8 @@ dependencies:
 
 devDependencies:
   jest: 27.0.4
-  release-it: 14.8.0
-  release-it-lerna-changelog: 3.1.0_release-it@14.8.0
+  release-it: 14.9.0
+  release-it-lerna-changelog: 3.1.0_release-it@14.9.0
 
 packages:
 
@@ -1890,7 +1890,7 @@ packages:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
-      mime-types: 2.1.30
+      mime-types: 2.1.31
     dev: true
 
   /fs-extra/9.1.0:
@@ -3977,7 +3977,7 @@ packages:
     dependencies:
       rc: 1.2.8
 
-  /release-it-lerna-changelog/3.1.0_release-it@14.8.0:
+  /release-it-lerna-changelog/3.1.0_release-it@14.9.0:
     resolution: {integrity: sha512-VehiRVpIB37XfggFcwMwDZ3ncXmD4npgM2tGGTfa3CN8MFCCJPPIRvaqHySDC/YV8mN7oLZeGSI/exrKXeybmA==}
     engines: {node: 10.* || 12.* || >= 14}
     peerDependencies:
@@ -3986,7 +3986,7 @@ packages:
       execa: 4.1.0
       lerna-changelog: 1.0.1
       mdast-util-from-markdown: 0.8.5
-      release-it: 14.8.0
+      release-it: 14.9.0
       tmp: 0.2.1
       validate-peer-dependencies: 1.2.0
       which: 2.0.2
@@ -3994,8 +3994,8 @@ packages:
       - supports-color
     dev: true
 
-  /release-it/14.8.0:
-    resolution: {integrity: sha512-XCw4kzJqdKgtis97HcNZ45r5dx+tZhcG1Yu2IEBKym1SceXiLBbycLsfqJQ8z+VLimClKpDeBdJkU03Vo/yFqw==}
+  /release-it/14.9.0:
+    resolution: {integrity: sha512-Pn9GH60jKkL+dUkVxCyyiIhA9oySu/Q+8F9aExCggcppxfZbhRCxMgmk/iFh+/oejdzQq9zCZSudA2CmWOSKxQ==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
