@@ -7,7 +7,7 @@ specifiers:
   meow: ^9.0.0
   package-json: ^6.0.0
   pkg-up: ^3.0.0
-  release-it: 14.10.1
+  release-it: 14.11.0
   release-it-lerna-changelog: 3.1.0
   semver: ^7.0.0
 
@@ -21,8 +21,8 @@ dependencies:
 
 devDependencies:
   jest: 27.0.6
-  release-it: 14.10.1
-  release-it-lerna-changelog: 3.1.0_release-it@14.10.1
+  release-it: 14.11.0
+  release-it-lerna-changelog: 3.1.0_release-it@14.11.0
 
 packages:
 
@@ -1109,7 +1109,7 @@ packages:
     dependencies:
       ansi-align: 3.0.0
       camelcase: 6.2.0
-      chalk: 4.1.1
+      chalk: 4.1.2
       cli-boxes: 2.2.1
       string-width: 4.2.2
       type-fest: 0.20.2
@@ -1597,6 +1597,11 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /define-lazy-prop/2.0.0:
+    resolution: {integrity: sha512-Ds09qNh8yw3khSjiJjiUInaGX9xlqZDY7JVryGxdxV7NPeuqQfplOpQ66yJFZut3jLa5zOwkXw1g9EI2uKh4Og==}
+    engines: {node: '>=8'}
+    dev: true
+
   /delayed-stream/1.0.0:
     resolution: {integrity: sha1-3zrhmayt+31ECqrgsp4icrJOxhk=}
     engines: {node: '>=0.4.0'}
@@ -1913,7 +1918,7 @@ packages:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
-      mime-types: 2.1.31
+      mime-types: 2.1.32
     dev: true
 
   /fs-extra/9.1.0:
@@ -2312,7 +2317,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       ansi-escapes: 4.3.2
-      chalk: 4.1.1
+      chalk: 4.1.2
       cli-cursor: 3.1.0
       cli-width: 3.0.0
       external-editor: 3.1.0
@@ -2371,6 +2376,12 @@ packages:
 
   /is-decimal/1.0.4:
     resolution: {integrity: sha512-RGdriMmQQvZ2aqaQq3awNA6dCGtKpiDFcOzrTWrDAT2MiWrKQVPmxLGHl7Y2nNu6led0kEyoX0enY0qXYsv9zw==}
+    dev: true
+
+  /is-docker/2.2.1:
+    resolution: {integrity: sha512-F+i2BKsFrH66iaUFc0woD8sLy8getkwTwtOBjvs56Cx4CgJDeKQeqfz8wAYiSb8JOprWhHH5p77PbmYCvvUuXQ==}
+    engines: {node: '>=8'}
+    hasBin: true
     dev: true
 
   /is-extglob/2.1.1:
@@ -2478,6 +2489,13 @@ packages:
   /is-unicode-supported/0.1.0:
     resolution: {integrity: sha512-knxG2q4UC3u8stRGyAVJCOdxFmv5DZiRcdlIaAQXAbSfJya+OhopNotLQrstBhququ4ZpuKbDc/8S6mgXgPFPw==}
     engines: {node: '>=10'}
+    dev: true
+
+  /is-wsl/2.2.0:
+    resolution: {integrity: sha512-fKzAra0rGJUUBwGBgNkHZuToZcn+TtXHpeCgmkMJMMYx1sQDYaCSyjJBSCa2nH1DGm7s3n1oBnohoVTBaN7Lww==}
+    engines: {node: '>=8'}
+    dependencies:
+      is-docker: 2.2.1
     dev: true
 
   /is-yarn-global/0.3.0:
@@ -3181,7 +3199,7 @@ packages:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==}
     engines: {node: '>=10'}
     dependencies:
-      chalk: 4.1.1
+      chalk: 4.1.2
       is-unicode-supported: 0.1.0
     dev: true
 
@@ -3478,6 +3496,13 @@ packages:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
     dev: true
 
+  /new-github-release-url/1.0.0:
+    resolution: {integrity: sha512-dle7yf655IMjyFUqn6Nxkb18r4AOAkzRcgcZv6WZ0IqrOH4QCEZ8Sm6I7XX21zvHdBeeMeTkhR9qT2Z0EJDx6A==}
+    engines: {node: '>=10'}
+    dependencies:
+      type-fest: 0.4.1
+    dev: true
+
   /nice-try/1.0.5:
     resolution: {integrity: sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==}
     dev: true
@@ -3576,6 +3601,15 @@ packages:
       mimic-fn: 2.1.0
     dev: true
 
+  /open/8.2.1:
+    resolution: {integrity: sha512-rXILpcQlkF/QuFez2BJDf3GsqpjGKbkUUToAIGo9A0Q6ZkoSGogZJulrUdwRkrAsoQvoZsrjCYt8+zblOk7JQQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      define-lazy-prop: 2.0.0
+      is-docker: 2.2.1
+      is-wsl: 2.2.0
+    dev: true
+
   /optionator/0.8.3:
     resolution: {integrity: sha512-+IW9pACdk3XWmmTXG8m3upGUJst5XRGzxMRjXzAuJ1XnIFNvfhjjIuYkDvysnPQ7qzqVzLt78BCruntqRhWQbA==}
     engines: {node: '>= 0.8.0'}
@@ -3593,7 +3627,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       bl: 4.1.0
-      chalk: 4.1.1
+      chalk: 4.1.2
       cli-cursor: 3.1.0
       cli-spinners: 2.6.0
       is-interactive: 1.0.0
@@ -4000,7 +4034,7 @@ packages:
     dependencies:
       rc: 1.2.8
 
-  /release-it-lerna-changelog/3.1.0_release-it@14.10.1:
+  /release-it-lerna-changelog/3.1.0_release-it@14.11.0:
     resolution: {integrity: sha512-VehiRVpIB37XfggFcwMwDZ3ncXmD4npgM2tGGTfa3CN8MFCCJPPIRvaqHySDC/YV8mN7oLZeGSI/exrKXeybmA==}
     engines: {node: 10.* || 12.* || >= 14}
     peerDependencies:
@@ -4009,7 +4043,7 @@ packages:
       execa: 4.1.0
       lerna-changelog: 1.0.1
       mdast-util-from-markdown: 0.8.5
-      release-it: 14.10.1
+      release-it: 14.11.0
       tmp: 0.2.1
       validate-peer-dependencies: 1.2.0
       which: 2.0.2
@@ -4017,8 +4051,8 @@ packages:
       - supports-color
     dev: true
 
-  /release-it/14.10.1:
-    resolution: {integrity: sha512-uC+LtV9vlcFOAkclJYnANNlufLoESZPjC5wGeKoW/Y91jJp0bfQv6/iU44a7rmZ4LHy3q52JD54jNe45RUOPYw==}
+  /release-it/14.11.0:
+    resolution: {integrity: sha512-JS4THLhJyNvjSj3jKZzjLe0Va8RKbf2FdrxL3rhLMug8zGERNxhDdsd52cbKTdhnxKo/OxntjdnK92xyZbnxTw==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -4040,6 +4074,8 @@ packages:
       is-ci: 3.0.0
       lodash: 4.17.21
       mime-types: 2.1.31
+      new-github-release-url: 1.0.0
+      open: 8.2.1
       ora: 5.4.1
       os-name: 4.0.0
       parse-json: 5.2.0
@@ -4608,6 +4644,11 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /type-fest/0.4.1:
+    resolution: {integrity: sha512-IwzA/LSfD2vC1/YDYMv/zHP4rDF1usCwllsDpbolT3D4fUepIO7f9K70jjmUewU/LmGUKJcwcVtDCpnKk4BPMw==}
+    engines: {node: '>=6'}
+    dev: true
+
   /type-fest/0.6.0:
     resolution: {integrity: sha512-q+MB8nYR1KDLrgr4G5yemftpMC7/QLqVndBmEEdqzmNj5dcFOO4Oo8qlwZE3ULT3+Zim1F8Kq4cBnikNhlCMlg==}
     engines: {node: '>=8'}
@@ -4668,7 +4709,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       boxen: 5.0.1
-      chalk: 4.1.1
+      chalk: 4.1.2
       configstore: 5.0.1
       has-yarn: 2.1.0
       import-lazy: 2.1.0
