@@ -10,7 +10,7 @@
   "author": "Tobias Bieniek <tobias.bieniek@gmail.com>",
   "main": "src/auto-dist-tag.js",
   "bin": {
-    "auto-dist-tag": "cli.js"
+    "auto-dist-tag": "cli.mjs"
   },
   "repository": {
     "type": "git",
