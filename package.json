@@ -31,7 +31,7 @@
   "devDependencies": {
     "jest": "27.5.1",
     "release-it": "15.5.0",
-    "release-it-lerna-changelog": "4.0.1"
+    "release-it-lerna-changelog": "5.0.0"
   },
   "engines": {
     "node": "14 || 16 || 18"
