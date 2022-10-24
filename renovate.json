@@ -2,5 +2,14 @@
   "extends": [
     "github>Turbo87/renovate-config",
     ":pinOnlyDevDependencies"
+  ],
+
+  "regexManagers": [
+    {
+      "fileMatch": ["^.github/workflows/[^\\.]+\\.ya?ml$"],
+      "matchStrings": ["PNPM_VERSION:\\s*(?<currentValue>.*?)\n"],
+      "depNameTemplate": "pnpm",
+      "datasourceTemplate": "npm"
+    }
   ]
 }
