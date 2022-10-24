@@ -1,11 +1,12 @@
 'use strict';
 
 const fs = require('fs-extra');
-const pkgUp = require('pkg-up');
 const getDistTags = require('./fetch-dist-tags');
 const calcDistTag = require('./calc-dist-tag');
 
 module.exports = async function autoDistTag(cwd, options) {
+  const { pkgUp } = await import('pkg-up');
+
   let pkgPath = await pkgUp(cwd);
   let pkg = await fs.readJson(pkgPath);
   let tags = await getDistTags(pkg.name);
