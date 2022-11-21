@@ -2128,8 +2128,8 @@ packages:
       path-is-absolute: 1.0.1
     dev: true
 
-  /global-dirs/3.0.0:
-    resolution: {integrity: sha512-v8ho2DS5RiCjftj1nD9NmnfaOzTdud7RRnVd9kFNOjqZbISlx5DQ+OrTkywgd0dIt7oFCvKetZSHoHcP3sDdiA==}
+  /global-dirs/3.0.1:
+    resolution: {integrity: sha512-NBcGGFbBA9s1VzD41QXDG+3++t9Mn5t1FpLdhESY6oKY4gYTFpX4wO3sqGUa0Srjtbfj3szX0RnemmrVRUdULA==}
     engines: {node: '>=10'}
     dependencies:
       ini: 2.0.0
@@ -2162,14 +2162,14 @@ packages:
       decompress-response: 6.0.0
       form-data-encoder: 2.1.3
       get-stream: 6.0.1
-      http2-wrapper: 2.1.11
+      http2-wrapper: 2.2.0
       lowercase-keys: 3.0.0
       p-cancelable: 3.0.0
       responselike: 3.0.0
     dev: true
 
-  /got/12.5.2:
-    resolution: {integrity: sha512-guHGMSEcsA5m1oPRweXUJnug0vuvlkX9wx5hzOka+ZBrBUOJHU0Z1JcNu3QE5IPGnA5aXUsQHdWOD4eJg9/v3A==}
+  /got/12.5.3:
+    resolution: {integrity: sha512-8wKnb9MGU8IPGRIo+/ukTy9XLJBwDiCpIf5TVzQ9Cpol50eMTpBq2GAuDsuDIz7hTYmZgMgC1e9ydr6kSDWs3w==}
     engines: {node: '>=14.16'}
     dependencies:
       '@sindresorhus/is': 5.3.0
@@ -2179,7 +2179,7 @@ packages:
       decompress-response: 6.0.0
       form-data-encoder: 2.1.3
       get-stream: 6.0.1
-      http2-wrapper: 2.1.11
+      http2-wrapper: 2.2.0
       lowercase-keys: 3.0.0
       p-cancelable: 3.0.0
       responselike: 3.0.0
@@ -2280,8 +2280,8 @@ packages:
       - supports-color
     dev: true
 
-  /http2-wrapper/2.1.11:
-    resolution: {integrity: sha512-aNAk5JzLturWEUiuhAN73Jcbq96R7rTitAoXV54FYMatvihnpD2+6PUgU4ce3D/m5VDbw+F5CsyKSF176ptitQ==}
+  /http2-wrapper/2.2.0:
+    resolution: {integrity: sha512-kZB0wxMo0sh1PehyjJUWRFEd99KC5TLjZ2cULC4f9iqJBAmKQQXEICjxl5iPJRwP40dpeHFqqhm7tYCvODpqpQ==}
     engines: {node: '>=10.19.0'}
     dependencies:
       quick-lru: 5.1.1
@@ -2521,7 +2521,7 @@ packages:
     resolution: {integrity: sha512-iwGqO3J21aaSkC7jWnHP/difazwS7SFeIqxv6wEtLU8Y5KlzFTjyqcSIT0d8s4+dDhKytsk9PJZ2BkS5eZwQRQ==}
     engines: {node: '>=10'}
     dependencies:
-      global-dirs: 3.0.0
+      global-dirs: 3.0.1
       is-path-inside: 3.0.3
     dev: true
 
@@ -2650,8 +2650,8 @@ packages:
       is-docker: 2.2.1
     dev: true
 
-  /is-yarn-global/0.4.0:
-    resolution: {integrity: sha512-HneQBCrXGBy15QnaDfcn6OLoU8AQPAa0Qn0IeJR/QCo4E8dNZaGGwxpCwWyEBQC5QvFonP8d6t60iGpAHVAfNA==}
+  /is-yarn-global/0.4.1:
+    resolution: {integrity: sha512-/kppl+R+LO5VmhYSEWARUFjodS25D68gvj8W7z0I7OWhUla5xWu8KL6CtB2V0R6yqhnRgbcaREMr4EEM6htLPQ==}
     engines: {node: '>=12'}
     dev: true
 
@@ -2970,8 +2970,8 @@ packages:
       jest-util: 29.3.1
     dev: true
 
-  /jest-pnp-resolver/1.2.2_jest-resolve@29.3.1:
-    resolution: {integrity: sha512-olV41bKSMm8BdnuMsewT4jqlZ8+3TCARAXjZGT9jcoSnrfUnRCqnMoF9XEeoWjbzObpqF9dRhHQj0Xb9QdF6/w==}
+  /jest-pnp-resolver/1.2.3_jest-resolve@29.3.1:
+    resolution: {integrity: sha512-+3NpwQEnRoIBtx4fyhblQDPgJI0H1IEIkX7ShLUjPGA7TtUTvI1oiKi3SR4oBR0hQhQR80l4WAe5RrXBwWMA8w==}
     engines: {node: '>=6'}
     peerDependencies:
       jest-resolve: '*'
@@ -3004,7 +3004,7 @@ packages:
       chalk: 4.1.2
       graceful-fs: 4.2.10
       jest-haste-map: 29.3.1
-      jest-pnp-resolver: 1.2.2_jest-resolve@29.3.1
+      jest-pnp-resolver: 1.2.3_jest-resolve@29.3.1
       jest-util: 29.3.1
       jest-validate: 29.3.1
       resolve: 1.22.1
@@ -4042,7 +4042,7 @@ packages:
     resolution: {integrity: sha512-hySwcV8RAWeAfPsXb9/HGSPn8lwDnv6fabH+obUZKX169QknRkRhPxd1yMubpKDskLFATkl3jHpNtVtDPFA0Wg==}
     engines: {node: '>=14.16'}
     dependencies:
-      got: 12.5.2
+      got: 12.5.3
       registry-auth-token: 5.0.1
       registry-url: 6.0.1
       semver: 7.3.8
@@ -5033,7 +5033,7 @@ packages:
       is-ci: 3.0.1
       is-installed-globally: 0.4.0
       is-npm: 6.0.0
-      is-yarn-global: 0.4.0
+      is-yarn-global: 0.4.1
       latest-version: 7.0.0
       pupa: 3.1.0
       semver: 7.3.8
