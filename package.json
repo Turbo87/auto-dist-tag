@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "jest": "29.5.0",
-    "release-it": "15.7.0",
+    "release-it": "15.8.0",
     "release-it-lerna-changelog": "5.0.0"
   },
   "engines": {
