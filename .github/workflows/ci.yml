@@ -8,8 +8,6 @@ on:
     tags:
       - "v*"
   pull_request:
-  schedule:
-    - cron: '0 3 * * *' # daily, at 3am
 
 env:
   PNPM_VERSION: 7.33.7
